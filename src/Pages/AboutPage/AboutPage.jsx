@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import PageHeading from '../../Components/PageHeading';
 import Section from '../../Components/Section';
 
-const headingData = { title: 'About Us' };
+const headingData = { title: 'About ALRIC' };
 
 const testimonials = [
   {

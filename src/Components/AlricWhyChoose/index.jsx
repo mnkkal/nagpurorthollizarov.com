@@ -1,12 +1,14 @@
-import { FaStar, FaUserMd, FaHospital, FaHandHoldingHeart, FaGlobeAsia, FaShieldAlt } from 'react-icons/fa';
+import { FaStar, FaLaptop, FaGraduationCap, FaUserMd, FaHandHoldingHeart, FaMicroscope, FaShieldAlt, FaHeartbeat } from 'react-icons/fa';
 
 const reasons = [
-  { icon: <FaStar />, title: 'Leading Orthopaedic Surgeon', desc: 'Renowned orthopaedic surgeon in Nagpur with expertise in complex trauma, spine & joint replacement.' },
-  { icon: <FaUserMd />, title: '15+ Years Experience', desc: 'Trained at IGGMC & Mayo Hospital, GMCH Nagpur with advanced expertise in Ilizarov & pelviacetabular surgery.' },
-  { icon: <FaHospital />, title: 'Modern Facilities', desc: 'Services at Dew Medicare & Trinity Hospital with advanced operation theatres & imaging technology.' },
-  { icon: <FaHandHoldingHeart />, title: 'Patient-Centered Care', desc: 'Every patient receives a tailored treatment plan for optimal recovery and restored mobility.' },
-  { icon: <FaGlobeAsia />, title: 'Comprehensive Services', desc: 'Wide range of services from trauma care to joint replacement, spine surgery & deformity correction.' },
-  { icon: <FaShieldAlt />, title: 'Proven Outcomes', desc: 'Consistently excellent surgical outcomes with thousands of satisfied patients across Central India.' },
+  { icon: <FaStar />, title: 'Dedicated Super-specialty Practice', desc: 'Focused exclusively on limb reconstruction, deformity correction & limb salvage — not a general orthopaedic clinic.' },
+  { icon: <FaLaptop />, title: 'Advanced Digital Deformity Planning', desc: 'Computer-assisted 3D planning & simulation for precise surgical execution using Hexapod & Ilizarov software.' },
+  { icon: <FaGraduationCap />, title: 'International Fellowship Training', desc: 'Trained at leading international centres in limb reconstruction & deformity correction with global best practices.' },
+  { icon: <FaUserMd />, title: 'Personalized Treatment Plans', desc: 'Every patient receives a custom-tailored reconstruction plan based on their unique anatomy, goals & lifestyle.' },
+  { icon: <FaHandHoldingHeart />, title: 'Joint Preservation Whenever Possible', desc: 'Priority on biological reconstruction & joint preservation techniques before considering replacement surgery.' },
+  { icon: <FaMicroscope />, title: 'Biological Reconstruction Techniques', desc: 'Using the body\'s natural healing potential with advanced bone grafting, membrane techniques & growth factors.' },
+  { icon: <FaShieldAlt />, title: 'Limb Salvage Expertise', desc: 'Proven protocols for salvaging threatened limbs from complex trauma, infection & nonunion with staged reconstruction.' },
+  { icon: <FaHeartbeat />, title: 'Comprehensive Rehabilitation', desc: 'Integrated physiotherapy & rehabilitation protocols for optimal functional recovery after reconstruction surgery.' },
 ];
 
 const WhyChoose = () => {
@@ -18,7 +20,7 @@ const WhyChoose = () => {
             <div className="alric-whychoose-image">
               <img
                 src="/assets/img/slider_1.jpg"
-                alt="Dr. Nikhil S. Charde - Orthopaedic Surgeon Nagpur"
+                alt="Dr. Nikhil S. Charde - ALRIC Limb Reconstruction"
                 className="img-fluid rounded-4"
               />
             </div>
@@ -30,8 +32,11 @@ const WhyChoose = () => {
                 WHY CHOOSE ALRIC
               </p>
               <h2 className="cs_section_title">
-                Why Patients Trust Dr. Nikhil S. Charde for Orthopaedic Care
+                India's Super-specialty Limb Reconstruction Institute
               </h2>
+              <p className="mt-2">
+                We treat the patient — not just the X-ray. Every case deserves a personalised reconstruction plan.
+              </p>
             </div>
             <div className="row cs_gap_y_30">
               {reasons.map((item, index) => (

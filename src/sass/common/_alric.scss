@@ -6,7 +6,7 @@
   Premium Typography
 ---------------------------------------------*/
 body {
-  font-family: 'Inter', 'Rubik', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -15,12 +15,99 @@ h1, h2, h3, h4, h5, h6,
 .cs_hero_title,
 .cs_iconbox_title,
 .cs_post_title {
-  font-family: 'Plus Jakarta Sans', 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
   letter-spacing: -0.02em;
 }
 
 .cs_section_title {
-  font-weight: 700;
+  font-weight: 800;
+  color: var(--heading-color);
+}
+
+.cs_section_subtitle {
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+/*---------------------------------------------
+  Gold Accent Override
+---------------------------------------------*/
+.cs_accent_color {
+  color: var(--accent-color) !important;
+}
+
+.cs_accent_bg {
+  background-color: var(--heading-color) !important;
+}
+
+.cs_btn.cs_style_1.cs_color_1 {
+  background: var(--accent-color);
+  border-color: var(--accent-color);
+  color: var(--white);
+  &:hover {
+    background: #b8922e;
+    border-color: #b8922e;
+  }
+}
+
+.cs_btn.cs_style_1.cs_color_2 {
+  background: var(--blue-color);
+  border-color: var(--blue-color);
+  color: var(--white);
+  &:hover {
+    background: #1a3a5c;
+    border-color: #1a3a5c;
+  }
+}
+
+.cs_btn.cs_style_1.cs_color_3 {
+  background: transparent;
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+  &:hover {
+    background: var(--accent-color);
+    color: var(--white);
+  }
+}
+
+.alric-btn-gold {
+  background: var(--accent-color) !important;
+  border-color: var(--accent-color) !important;
+  color: var(--white) !important;
+  &:hover {
+    background: #b8922e !important;
+    border-color: #b8922e !important;
+  }
+}
+
+.cs_primary_btn {
+  background: var(--accent-color) !important;
+  border-color: var(--accent-color) !important;
+  color: var(--white) !important;
+  &:hover {
+    background: #b8922e !important;
+    border-color: #b8922e !important;
+  }
+}
+
+.cs_secondary_btn {
+  background: transparent !important;
+  border-color: var(--accent-color) !important;
+  color: var(--accent-color) !important;
+  &:hover {
+    background: var(--accent-color) !important;
+    color: var(--white) !important;
+  }
+}
+
+.alric-btn-outline {
+  background: transparent !important;
+  border: 2px solid rgba(255,255,255,0.4) !important;
+  color: var(--white) !important;
+  &:hover {
+    background: rgba(255,255,255,0.1) !important;
+    border-color: var(--white) !important;
+  }
 }
 
 /*---------------------------------------------
@@ -33,7 +120,7 @@ h1, h2, h3, h4, h5, h6,
     content: '';
     position: absolute;
     inset: 0;
-    background: rgba(0, 34, 97, 0.65);
+    background: rgba(15, 43, 70, 0.7);
     z-index: 1;
   }
 
@@ -56,64 +143,110 @@ h1, h2, h3, h4, h5, h6,
 
 /*---------------------------------------------
   Header / Logo
- ---------------------------------------------*/
+---------------------------------------------*/
 .cs_site_header.cs_style_1 {
   background: #fff;
   box-shadow: 0 2px 20px rgba(0,0,0,0.06);
 }
 
-.alric-logo-text {
-  font-family: 'Poppins', sans-serif;
-  font-size: 26px;
-  font-weight: 800;
-  color: var(--heading-color);
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  line-height: 1.2;
+/*---------------------------------------------
+  Hero - ALRIC Brand
+---------------------------------------------*/
+.alric-hero {
+  position: relative;
+  overflow: hidden;
+}
 
-  small {
-    display: block;
-    font-size: 8px;
-    font-weight: 500;
-    letter-spacing: 0.8px;
-    color: var(--accent-color);
-    text-transform: uppercase;
+.alric-hero-bg {
+  position: absolute;
+  inset: 0;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }
 
-/*---------------------------------------------
-  Hero - ALRIC version using template patterns
----------------------------------------------*/
-.alric-hero {
-  .cs_hero.cs_style_1 {
-    height: 750px;
+.alric-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(15,43,70,0.85) 0%, rgba(15,43,70,0.6) 100%);
+}
+
+.alric-hero-content {
+  position: relative;
+  min-height: 650px;
+  display: flex;
+  align-items: center;
+  padding: 120px 0 80px;
+}
+
+.alric-hero-text {
+  .alric-hero-badge {
+    display: inline-block;
+    background: var(--accent-color);
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    padding: 4px 16px;
+    margin-bottom: 8px;
   }
-  .cs_hero_title {
-    font-size: 56px;
+
+  .alric-hero-institute {
+    color: rgba(255,255,255,0.7);
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
   }
-  .alric-hero-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-    margin-top: 20px;
-    span {
-      padding: 3px 12px;
-      border: 1px solid var(--border-color);
-      border-radius: 20px;
-      font-size: 11px;
-      color: var(--blue-color);
-      font-weight: 500;
-    }
+
+  .alric-hero-title {
+    font-size: 48px;
+    font-weight: 800;
+    color: var(--white);
+    line-height: 1.15;
+    margin-bottom: 16px;
+  }
+
+  .alric-hero-desc {
+    font-size: 16px;
+    color: rgba(255,255,255,0.8);
+    line-height: 1.6;
+    max-width: 600px;
+    margin-bottom: 12px;
+  }
+
+  .alric-hero-tagline {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--accent-color);
+    letter-spacing: 1px;
+    margin-bottom: 28px;
+  }
+}
+
+.alric-hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  .cs_btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 12px 24px;
   }
 }
 
 .alric-hero-card {
-  background: var(--white);
+  background: rgba(255,255,255,0.95);
   border-radius: 16px;
   padding: 30px;
   text-align: center;
-  box-shadow: 0 10px 40px rgba(0,0,0,0.08);
-  margin-top: 30px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+  backdrop-filter: blur(10px);
 
   .alric-hero-card-icon {
     width: 60px; height: 60px;
@@ -136,11 +269,25 @@ h1, h2, h3, h4, h5, h6,
   gap: 8px;
   color: var(--accent-color);
   font-weight: 600;
-  &:hover { gap: 12px; }
+  text-decoration: none;
+  &:hover { gap: 12px; color: #b8922e; }
+}
+
+.alric-hero-scroll {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  span {
+    color: rgba(255,255,255,0.5);
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
 }
 
 /*---------------------------------------------
-  Conditions Grid
+  Conditions / Centres of Excellence
 ---------------------------------------------*/
 .alric-condition-card {
   background: var(--white);
@@ -152,7 +299,7 @@ h1, h2, h3, h4, h5, h6,
   height: 100%;
   &:hover {
     transform: translateY(-4px);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+    box-shadow: 0 10px 30px rgba(200,162,74,0.1);
     border-color: var(--accent-color);
   }
 }
@@ -169,14 +316,14 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .alric-condition-title {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 700;
   color: var(--heading-color);
   margin-bottom: 6px;
 }
 
 .alric-condition-desc {
-  font-size: 13px;
+  font-size: 12px;
   color: var(--body-color);
   margin: 0;
   line-height: 1.5;
@@ -195,12 +342,12 @@ h1, h2, h3, h4, h5, h6,
   &:hover {
     border-color: var(--accent-color);
     transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+    box-shadow: 0 8px 25px rgba(200,162,74,0.08);
   }
 }
 
-.alric-whychoose-icon { font-size: 32px; margin-bottom: 12px; }
-.alric-whychoose-title { font-size: 16px; font-weight: 700; margin-bottom: 8px; }
+.alric-whychoose-icon { font-size: 32px; color: var(--accent-color); margin-bottom: 12px; }
+.alric-whychoose-title { font-size: 16px; font-weight: 700; margin-bottom: 8px; color: var(--heading-color); }
 .alric-whychoose-desc { font-size: 13px; color: var(--body-color); margin: 0; line-height: 1.6; }
 
 /*---------------------------------------------
@@ -252,7 +399,7 @@ h1, h2, h3, h4, h5, h6,
 
 .alric-gallery-label {
   position: absolute; top: 6px; left: 6px;
-  background: rgba(0,0,0,0.6); color: #fff;
+  background: rgba(15,43,70,0.85); color: #fff;
   font-size: 10px; padding: 2px 8px; border-radius: 3px;
   text-transform: uppercase; letter-spacing: 1px;
   &.after { left: auto; right: 6px; background: var(--accent-color); }
@@ -284,8 +431,8 @@ h1, h2, h3, h4, h5, h6,
 
 .result-badge {
   display: inline-block; padding: 4px 14px;
-  background: rgba(46, 166, 247, 0.1);
-  border: 1px solid rgba(46, 166, 247, 0.2);
+  background: rgba(200,162,74,0.1);
+  border: 1px solid rgba(200,162,74,0.2);
   border-radius: 20px;
   color: var(--accent-color); font-size: 12px; font-weight: 600;
 }
@@ -340,7 +487,7 @@ h1, h2, h3, h4, h5, h6,
   Contact
 ---------------------------------------------*/
 .alric-form-field {
-  &:focus { border-color: var(--accent-color) !important; }
+  &:focus { border-color: var(--accent-color) !important; box-shadow: 0 0 0 0.2rem rgba(200,162,74,0.15) !important; }
 }
 
 .alric-contact-info { display: flex; flex-direction: column; gap: 16px; }
@@ -389,8 +536,9 @@ h1, h2, h3, h4, h5, h6,
   color: rgba(255,255,255,0.85);
   transition: all 0.3s;
   svg { font-size: 20px; }
-  &.whatsapp { color: #25D366; }
   &.call { color: #fff; }
+  &.whatsapp { color: #25D366; }
+  &.appointment { color: var(--accent-color); }
   &.xray { color: #ffd700; }
   &:hover { background: rgba(255,255,255,0.1); color: #fff; }
 }
@@ -400,9 +548,9 @@ h1, h2, h3, h4, h5, h6,
 ---------------------------------------------*/
 .alric-footer-tagline {
   color: var(--accent-color);
-  font-size: 13px;
-  font-weight: 500;
-  letter-spacing: 0.5px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
   margin-bottom: 16px;
 }
 
@@ -413,18 +561,12 @@ h1, h2, h3, h4, h5, h6,
   margin-bottom: 20px;
 }
 
-.alric-footer-logo {
-  font-family: 'Poppins', sans-serif;
-  font-size: 24px;
-  font-weight: 800;
-  color: #fff;
-  letter-spacing: 2px;
-  display: block;
-  margin-bottom: 8px;
+.cs_footer_highlight_navy {
+  background-color: #0F2B46 !important;
 }
 
 /*---------------------------------------------
-  Blog Overrides (keep original template style)
+  Blog Overrides
 ---------------------------------------------*/
 .cs_post.cs_style_1 .cs_posted_by {
   background-color: var(--accent-color) !important;
@@ -451,7 +593,7 @@ h1, h2, h3, h4, h5, h6,
 }
 
 /*---------------------------------------------
-  Ticker (small accent bar)
+  Ticker
 ---------------------------------------------*/
 .alric-ticker {
   background: var(--accent-color);
@@ -485,4 +627,183 @@ h1, h2, h3, h4, h5, h6,
   font-weight: 500;
   overflow: hidden;
   .sep { opacity: 0.4; }
+}
+
+/*---------------------------------------------
+  Meet Dr. Nikhil Charde
+---------------------------------------------*/
+.alric-doctor-image {
+  img {
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+  }
+}
+
+.alric-doctor-qual {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--accent-color);
+  margin-bottom: 4px;
+}
+
+.alric-doctor-role {
+  font-size: 15px;
+  color: var(--body-color);
+  margin-bottom: 20px;
+}
+
+.alric-doctor-bio {
+  p {
+    font-size: 14px;
+    color: var(--body-color);
+    line-height: 1.7;
+    margin-bottom: 12px;
+  }
+}
+
+.alric-doctor-testimonial {
+  background: var(--gray-color);
+  padding: 20px 24px;
+  border-radius: 10px;
+  border-left: 3px solid var(--accent-color);
+  margin: 20px 0;
+  position: relative;
+}
+
+.alric-quote-icon {
+  color: var(--accent-color);
+  font-size: 20px;
+  margin-bottom: 8px;
+  opacity: 0.5;
+}
+
+.alric-doctor-quote {
+  font-size: 14px;
+  font-style: italic;
+  color: var(--heading-color);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.alric-doctor-cta {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+  .cs_btn { display: inline-flex; align-items: center; gap: 8px; }
+}
+
+/*---------------------------------------------
+  Research & Publications
+---------------------------------------------*/
+.alric-research-card {
+  background: var(--white);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 28px 24px;
+  height: 100%;
+  transition: all 0.4s ease;
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(200,162,74,0.08);
+    border-color: var(--accent-color);
+  }
+}
+
+.alric-research-header {
+  margin-bottom: 16px;
+}
+
+.alric-research-icon {
+  width: 48px;
+  height: 48px;
+  background: rgba(200,162,74,0.1);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-color);
+  font-size: 22px;
+}
+
+.alric-research-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--heading-color);
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.alric-research-desc {
+  font-size: 13px;
+  color: var(--body-color);
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.alric-research-link {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--accent-color);
+  text-decoration: none;
+  &:hover {
+    color: #b8922e;
+    text-decoration: underline;
+  }
+}
+
+/*---------------------------------------------
+  FAQ
+---------------------------------------------*/
+.alric-faq-item {
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  &.active {
+    border-color: var(--accent-color);
+    box-shadow: 0 4px 15px rgba(200,162,74,0.1);
+  }
+}
+
+.alric-faq-question {
+  width: 100%;
+  background: var(--white);
+  border: none;
+  padding: 18px 22px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  cursor: pointer;
+  color: var(--heading-color);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.4;
+  transition: all 0.3s;
+  &:hover {
+    background: var(--gray-color);
+  }
+}
+
+.alric-faq-icon {
+  font-size: 14px;
+  color: var(--accent-color);
+  transition: transform 0.3s;
+  flex-shrink: 0;
+  &.rotated {
+    transform: rotate(180deg);
+  }
+}
+
+.alric-faq-answer {
+  padding: 0 22px 18px;
+  background: var(--white);
+  p {
+    font-size: 14px;
+    color: var(--body-color);
+    line-height: 1.7;
+    margin: 0;
+  }
 }

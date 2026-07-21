@@ -3,14 +3,14 @@ import Service from '../../Components/Service';
 import Section from '../../Components/Section';
 
 const headingData = {
-  title: 'Our Services',
+  title: 'Centres of Excellence',
 };
 
 const serviceData = {
-  subtitle: 'OUR SERVICES',
-  title: 'Comprehensive Orthopaedic Care by Dr. Nikhil S. Charde',
+  subtitle: 'CENTRES OF EXCELLENCE',
+  title: 'ALRIC — Advanced Limb Reconstruction Specialities',
   description:
-    'Dr. Nikhil S. Charde, a leading orthopaedic surgeon in Nagpur, offers advanced surgical and non-surgical treatments for a wide range of orthopaedic conditions. From complex trauma and Ilizarov reconstruction to joint replacement and spine surgery, every treatment is tailored to restore mobility and enhance quality of life.',
+    'ALRIC is a super-specialty limb reconstruction institute focusing on complex nonunion, bone infection, deformity correction, knee preservation, limb salvage and limb lengthening. Every patient receives a personalised reconstruction plan using advanced Ilizarov, Hexapod and joint-preserving techniques.',
   services: [
     {
       backgroundImage: '/assets/img/service_trauma.jpg',
@@ -79,7 +79,7 @@ const serviceData = {
   ],
   footerIcon: '/assets/img/icons/service_footer_icon_1.png',
   footerText:
-    'Delivering advanced orthopaedic care for your mobility and well-being.<br>Book a consultation with Dr. Nikhil S. Charde today.',
+    'Preserving Limbs. Restoring Lives.<br>Book a consultation with Dr. Nikhil S. Charde at ALRIC today.',
   footerLink: 'https://wa.me/917888096906',
   footerLinkText: 'BOOK CONSULTATION',
 };

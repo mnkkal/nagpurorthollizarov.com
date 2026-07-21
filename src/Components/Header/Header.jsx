@@ -15,7 +15,7 @@ const Header = ({ isTopBar, variant }) => {
     navItems: [
       { label: 'Home', href: '/' },
       { label: 'About', href: '/about' },
-      { label: 'Services', href: '/service' },
+      { label: 'Centres of Excellence', href: '/service' },
       { label: 'Case Studies', href: '/case-studies' },
       { label: 'Blog', href: '/blog' },
       { label: 'Contact', href: '/contact' },

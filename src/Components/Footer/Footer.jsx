@@ -7,12 +7,15 @@ const Footer = () => {
       <div className="container">
         <div className="cs_footer_row">
           <div className="cs_footer_col">
-            <div className="cs_footer_highlight_col cs_accent_bg">
+            <div className="cs_footer_highlight_col cs_footer_highlight_navy">
               <div className="cs_footer_logo">
-                <img src="/assets/img/logo.webp" alt="Dr. Nikhil S. Charde - Orthopaedic Surgeon Nagpur" style={{maxWidth:220, height:'auto'}} />
+                <img src="/assets/img/logo.webp" alt="ALRIC – Advanced Limb Reconstruction & Ilizarov Centre" style={{maxWidth:220, height:'auto'}} />
               </div>
-              <p className="alric-footer-desc" style={{marginTop:16}}>
-                Dr. Nikhil S. Charde – M.B.B.S., D.Ortho. – Consultant Orthopaedics, Spine & Joint Replacement Surgeon at Nagpur. Specializing in complex trauma, Ilizarov surgery, joint replacement, deformity correction, and spine surgery.
+              <p className="alric-footer-tagline" style={{marginTop:16}}>
+                Preserving Limbs. Restoring Lives.
+              </p>
+              <p className="alric-footer-desc">
+                ALRIC — Advanced Limb Reconstruction & Ilizarov Centre. India's super-specialty institute for limb reconstruction, deformity correction, nonunion, bone infection, knee preservation, limb salvage and limb lengthening. Led by Dr. Nikhil S. Charde in Nagpur.
               </p>
               <div className="cs_social_btns cs_style_1">
                 <Link to="https://www.youtube.com/@drnikhilcharde" target="_blank" className="cs_center"><FaYoutube /></Link>
@@ -29,8 +32,8 @@ const Footer = () => {
               <ul className="cs_footer_widget_nav_list cs_mp_0">
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/about">About Us</Link></li>
-                <li><Link to="/service">Services</Link></li>
-                <li><Link to="/portfolio">Case Library</Link></li>
+                <li><Link to="/service">Centres of Excellence</Link></li>
+                <li><Link to="/case-studies">Case Studies</Link></li>
                 <li><Link to="/blog">Blog</Link></li>
                 <li><Link to="/contact">Contact</Link></li>
               </ul>
@@ -39,21 +42,21 @@ const Footer = () => {
 
           <div className="cs_footer_col">
             <div className="cs_footer_widget">
-              <h2 className="cs_footer_widget_title">Specialities</h2>
+              <h2 className="cs_footer_widget_title">Centres of Excellence</h2>
               <ul className="cs_footer_widget_nav_list cs_mp_0">
-                <li><Link to="/service">Complex Trauma Care</Link></li>
-                <li><Link to="/service">Ilizarov Surgery</Link></li>
-                <li><Link to="/service">Joint Replacement (Knee/Hip/Shoulder)</Link></li>
+                <li><Link to="/service">Limb Reconstruction</Link></li>
+                <li><Link to="/service">Nonunion & Bone Loss</Link></li>
                 <li><Link to="/service">Deformity Correction</Link></li>
-                <li><Link to="/service">Spine Surgery</Link></li>
-                <li><Link to="/service">Pelviacetabular Surgery</Link></li>
+                <li><Link to="/service">Knee Preservation (HTO/DFO)</Link></li>
+                <li><Link to="/service">Ilizarov & Hexapod Surgery</Link></li>
+                <li><Link to="/service">Limb Salvage</Link></li>
               </ul>
             </div>
           </div>
 
           <div className="cs_footer_col">
             <div className="cs_footer_widget">
-              <h2 className="cs_footer_widget_title">Contact</h2>
+              <h2 className="cs_footer_widget_title">Contact ALRIC</h2>
               <ul className="cs_footer_contact cs_mp_0">
                 <li><FaMapMarkerAlt /> Dew Medicare & Trinity Hospital, Nagpur, Maharashtra</li>
                 <li><FaPhoneAlt /> <a href="tel:+917888096906" style={{color:'#fff'}}>+91 78880 96906</a></li>
@@ -73,7 +76,7 @@ const Footer = () => {
         <div className="container">
           <div className="cs_footer_bottom_in">
             <p className="cs_footer_copyright mb-0">
-              &copy; {new Date().getFullYear()} Dr. Nikhil S. Charde – Orthopaedic Surgeon, Nagpur. All Rights Reserved.
+              &copy; {new Date().getFullYear()} ALRIC — Advanced Limb Reconstruction & Ilizarov Centre. All Rights Reserved.
             </p>
             <ul className="cs_footer_menu cs_mp_0">
               <li><Link to="/">Home</Link></li>

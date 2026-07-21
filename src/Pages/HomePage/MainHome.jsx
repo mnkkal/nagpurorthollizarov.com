@@ -1,70 +1,22 @@
-import HeroSection from '../../Components/HeroSection';
-import ConditionsGrid from '../../Components/AlricConditions';
+import AlricHero from '../../Components/AlricHero';
+import CentresOfExcellence from '../../Components/AlricConditions';
 import WhyChoose from '../../Components/AlricWhyChoose';
-import Techniques from '../../Components/AlricTechniques';
+import AlricDoctor from '../../Components/AlricDoctor';
+import AlricResearch from '../../Components/AlricResearch';
 import BeforeAfterGallery from '../../Components/AlricGallery';
 import PatientStories from '../../Components/AlricStories';
 import VideosSection from '../../Components/AlricVideos';
-import InternationalPatients from '../../Components/AlricInternational';
 import GoogleReviews from '../../Components/AlricReviews';
+import AlricFaq from '../../Components/AlricFaq';
 import BlogSection from '../../Components/BlogsSection';
 import ContactSection2 from '../../Components/ContactSection/ContactSection2';
 import Section from '../../Components/Section';
 import AlricStickyCta from '../../Components/AlricStickyCta';
 import { FaWhatsapp, FaPhone } from 'react-icons/fa6';
 
-const heroData = {
-  primarySlider: [
-    {
-      bgImageUrl: 'assets/img/slider_1.jpg',
-      title: 'Expert Orthopaedic Care by <br>Dr. Nikhil S. <span>Charde</span>',
-      contactSubtitle:
-        'Leading orthopaedic surgeon in Nagpur specializing in complex trauma, Ilizarov surgery, joint replacement & spine surgery.',
-      contactTitle: 'Consultation',
-      contact: 'Call: +91 78880 96906',
-      btnText1: 'WhatsApp Consultation',
-      link: 'https://wa.me/917888096906',
-      btnText2: 'Book Appointment',
-      link2: '/contact',
-      iconImgUrl: 'assets/img/icons/hero_icon.png',
-    },
-    {
-      bgImageUrl: 'assets/img/slider_2.jpg',
-      title: 'Ilizarov Surgery & <br>Limb <span>Reconstruction</span>',
-      contactSubtitle:
-        'Advanced Ilizarov & Hexapod techniques for complex deformity correction, nonunion treatment & bone transport.',
-      contactTitle: 'Super-Speciality Care',
-      contact: 'Call: +91 78880 96906',
-      btnText1: 'Send X-ray',
-      link: '/contact',
-      btnText2: 'Learn More',
-      link2: '/about',
-      iconImgUrl: 'assets/img/icons/hero_icon.png',
-    },
-    {
-      bgImageUrl: 'assets/img/slider_3.jpg',
-      title: 'Joint Replacement & <br>Spine <span>Surgery</span>',
-      contactSubtitle:
-        'Advanced knee, hip & shoulder replacement with minimally invasive spine surgery for optimal recovery.',
-      contactTitle: 'Expert Surgical Care',
-      contact: 'Call: +91 78880 96906',
-      btnText1: 'WhatsApp Consultation',
-      link: 'https://wa.me/917888096906',
-      btnText2: 'Our Services',
-      link2: '/service',
-      iconImgUrl: 'assets/img/icons/hero_icon.png',
-    },
-  ],
-  secondarySlider: [
-    'assets/img/slider_1.jpg',
-    'assets/img/slider_2.jpg',
-    'assets/img/slider_3.jpg',
-  ],
-};
-
 const blogsData = {
-  sectionTitle: 'BLOGS & ARTICLES',
-  sectionSubtitle: 'Orthopaedic Health Resources by Dr. Nikhil S. Charde',
+  sectionTitle: 'LATEST BLOGS',
+  sectionSubtitle: 'Orthopaedic Knowledge Base by Dr. Nikhil S. Charde',
   postsData: [
     {
       title: 'Frozen Shoulder – Causes, Stages & Treatment',
@@ -121,34 +73,34 @@ const MainHome = () => {
   return (
     <>
       <section className="alric-hero">
-        <HeroSection data={heroData} />
+        <AlricHero />
       </section>
 
       <section className="alric-ticker">
         <div className="container">
           <div className="alric-ticker-content">
-            <span className="alric-ticker-label">Dr. Nikhil S. Charde</span>
+            <span className="alric-ticker-label">ALRIC</span>
             <div className="alric-ticker-text">
-              <span>Orthopaedic Surgeon</span>
+              <span>Limb Reconstruction</span>
               <span className="sep">•</span>
-              <span>Complex Trauma Care</span>
+              <span>Nonunion</span>
               <span className="sep">•</span>
-              <span>Ilizarov Surgery</span>
-              <span className="sep">•</span>
-              <span>Joint Replacement</span>
+              <span>Bone Infection</span>
               <span className="sep">•</span>
               <span>Deformity Correction</span>
               <span className="sep">•</span>
-              <span>Spine Surgery</span>
+              <span>Knee Preservation</span>
               <span className="sep">•</span>
-              <span>Pelviacetabular Surgery</span>
+              <span>Limb Lengthening</span>
+              <span className="sep">•</span>
+              <span>Limb Salvage</span>
             </div>
           </div>
         </div>
       </section>
 
       <Section className="cs_gray_bg" topSpaceLg="70" topSpaceMd="50" bottomSpaceLg="80" bottomSpaceMd="50">
-        <ConditionsGrid />
+        <CentresOfExcellence />
       </Section>
 
       <Section className="cs_gray_bg_2" topSpaceLg="70" topSpaceMd="50">
@@ -156,15 +108,23 @@ const MainHome = () => {
       </Section>
 
       <Section topSpaceLg="70" topSpaceMd="50" bottomSpaceLg="80" bottomSpaceMd="50">
-        <Techniques />
+        <AlricDoctor />
       </Section>
 
       <Section className="cs_gray_bg" topSpaceLg="70" topSpaceMd="50" bottomSpaceLg="80" bottomSpaceMd="50">
-        <BeforeAfterGallery />
+        <PatientStories />
       </Section>
 
       <Section topSpaceLg="70" topSpaceMd="50" bottomSpaceLg="80" bottomSpaceMd="50">
-        <PatientStories />
+        <BeforeAfterGallery />
+      </Section>
+
+      <Section className="cs_gray_bg" topSpaceLg="70" topSpaceMd="50" bottomSpaceLg="80" bottomSpaceMd="50">
+        <VideosSection />
+      </Section>
+
+      <Section topSpaceLg="70" topSpaceMd="50" bottomSpaceLg="80" bottomSpaceMd="50">
+        <AlricResearch />
       </Section>
 
       <Section className="cs_gray_bg" topSpaceLg="70" topSpaceMd="50" bottomSpaceLg="80" bottomSpaceMd="50">
@@ -172,11 +132,7 @@ const MainHome = () => {
       </Section>
 
       <Section topSpaceLg="70" topSpaceMd="50" bottomSpaceLg="80" bottomSpaceMd="50">
-        <VideosSection />
-      </Section>
-
-      <Section topSpaceLg="70" topSpaceMd="50" bottomSpaceLg="80" bottomSpaceMd="50">
-        <InternationalPatients />
+        <AlricFaq />
       </Section>
 
       <Section topSpaceLg="70" topSpaceMd="50" bottomSpaceLg="80" bottomSpaceMd="50">
@@ -189,7 +145,7 @@ const MainHome = () => {
         <div className="container">
           <div className="alric-final-cta-content" data-aos="fade-up">
             <h2>Ready to Restore Your Mobility?</h2>
-            <p>Consult Dr. Nikhil S. Charde for expert orthopaedic care in Nagpur</p>
+            <p>Consult Dr. Nikhil S. Charde at ALRIC for expert limb reconstruction care in Nagpur</p>
             <div className="alric-final-cta-buttons">
               <a href="https://wa.me/917888096906" target="_blank" rel="noopener noreferrer" className="cs_btn cs_style_1 cs_color_1">
                 <FaWhatsapp /> WhatsApp Now
