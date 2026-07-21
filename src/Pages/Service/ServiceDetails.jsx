@@ -13,6 +13,12 @@ const ServiceDetails = () => {
     window.scrollTo(0, 0);
   }, [serviceId]);
 
+  useEffect(() => {
+    if (data) {
+      document.title = `${data.title} | ALRIC — Advanced Limb Reconstruction & Ilizarov Centre`;
+    }
+  }, [data]);
+
   if (!data) {
     return (
       <Section className={'cs_page_heading cs_bg_filed cs_center'} backgroundImage="/assets/img/service_trauma.jpg">
@@ -34,7 +40,7 @@ const ServiceDetails = () => {
           <div className="row cs_gap_y_40">
             <div className="col-xl-4 col-lg-5">
               <div className="cs_solution_content_wrapper cs_gray_bg cs_type_1">
-                <h3 className="cs_service_heading">All Services:</h3>
+                <h3 className="cs_service_heading">Centres of Excellence:</h3>
                 <ul className="cs_solution_links cs_style_2 cs_mp0">
                   {data.services.map((s, i) => (
                     <li key={i}>

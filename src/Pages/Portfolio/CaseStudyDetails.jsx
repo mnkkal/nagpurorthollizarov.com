@@ -13,6 +13,12 @@ const CaseStudyDetails = () => {
     window.scrollTo(0, 0);
   }, [caseId]);
 
+  useEffect(() => {
+    if (data) {
+      document.title = `${data.title} | ALRIC Case Studies — Dr. Nikhil S. Charde`;
+    }
+  }, [data]);
+
   if (!data) {
     return (
       <Section className="cs_page_heading cs_bg_filed cs_center" backgroundImage="/assets/img/page_heading_bg.jpg">

@@ -58,9 +58,12 @@ const AboutPage = () => {
                 <span className="cs_shape_left" />
                 ABOUT DR. NIKHIL S. CHARDE
               </p>
-              <h2 className="cs_section_title">Welcome to Dr. Nikhil S. Charde's Orthopaedic Practice</h2>
+              <h2 className="cs_section_title">ALRIC — Advanced Limb Reconstruction & Ilizarov Centre</h2>
               <p style={{ marginTop: 20, lineHeight: 1.8, color: 'var(--body-color)' }}>
-                At Dr. Nikhil S. Charde's practice, we are dedicated to providing the highest standard of orthopaedic care to our patients. Dr. Charde, a renowned orthopaedic surgeon in Nagpur, brings extensive expertise and a compassionate approach to treating a wide range of orthopaedic conditions.
+                ALRIC (Advanced Limb Reconstruction & Ilizarov Centre) is a super-specialty institute under the leadership of Dr. Nikhil S. Charde, dedicated exclusively to limb reconstruction, deformity correction, nonunion treatment, bone infection management, knee preservation, limb salvage and limb lengthening. We are committed to providing the highest standard of reconstructive orthopaedic care.
+              </p>
+              <p style={{ lineHeight: 1.8, color: 'var(--body-color)' }}>
+                Dr. Charde brings extensive expertise and a compassionate approach, with advanced fellowship training and years of experience in managing the most complex orthopaedic cases. Our philosophy: <strong>We treat the patient — not just the X-ray.</strong>
               </p>
               <div className="cs_about_iconbox" style={{ marginTop: 20 }}>
                 <div className="cs_about_iconbox_icon cs_center">
@@ -79,15 +82,15 @@ const AboutPage = () => {
         <div className="container">
           <div className="row cs_gap_y_30">
             <div className="col-lg-6">
-              <h3 className="cs_service_heading">Our Specialities</h3>
+              <h3 className="cs_service_heading">Our Centres of Excellence</h3>
               <div className="row cs_gap_y_20 mt-3">
                 {[
-                  'Complex Trauma: Expert management of severe fractures and injuries.',
-                  'Ilizarov Technique: Specialized in using the Ilizarov apparatus for bone lengthening and deformity correction.',
-                  'Spine Surgery: Advanced treatments for spine-related conditions.',
-                  'Pelviacetabular Surgery: Skilled in addressing injuries and conditions of the pelvis and acetabulum.',
-                  'Joint Replacement: Offering knee, hip, and shoulder replacements to restore mobility and alleviate pain.',
-                  'Deformity Correction: Precision correction of congenital and acquired bone deformities.',
+                  'Limb Reconstruction: Advanced Ilizarov & Hexapod techniques for complex bone defects & nonunion.',
+                  'Deformity Correction: Precision computer-assisted correction of bow legs, knock knees & multi-planar deformities.',
+                  'Knee Preservation (HTO/DFO): Joint-preserving osteotomies to delay or avoid knee replacement.',
+                  'Limb Lengthening: Internal (Precice nail) & external techniques for height increase & limb discrepancy.',
+                  'Bone Infection (Osteomyelitis): Multi-stage reconstruction for chronic bone infections.',
+                  'Limb Salvage: Multi-disciplinary salvage for threatened limbs from trauma, infection & tumour.',
                 ].map((item, i) => (
                   <div className="col-md-6" key={i}>
                     <div className="d-flex align-items-start gap-2 p-3 cs_radius_10" style={{ background: '#fff', height: '100%' }}>
@@ -99,18 +102,18 @@ const AboutPage = () => {
               </div>
             </div>
             <div className="col-lg-6">
-              <h3 className="cs_service_heading">Our Approach</h3>
+              <h3 className="cs_service_heading">Our Philosophy</h3>
               <div className="cs_service_detail_item mt-3">
-                <h4 className="cs_service_detail_title">Patient-Centered Care</h4>
-                <p>At the heart of our practice is a commitment to patient-centered care. We understand that every patient is unique, and we tailor our treatment plans to meet individual needs. Dr. Charde and his team take the time to listen, educate, and involve patients in their care decisions, ensuring they feel supported and informed throughout their treatment journey.</p>
+                <h4 className="cs_service_detail_title">Patient-Centered Reconstruction</h4>
+                <p>At the heart of ALRIC is the belief that every patient deserves a personalised reconstruction plan. We treat the patient — not just the X-ray. Dr. Charde and his team take the time to listen, educate, and involve patients in their care decisions, ensuring they feel supported and informed throughout their treatment journey.</p>
               </div>
               <div className="cs_service_detail_item">
-                <h4 className="cs_service_detail_title">State-of-the-Art Facilities</h4>
-                <p>We are proud to offer our services at Dew Medicare & Trinity Hospital in Nagpur, a modern facility equipped with the latest technology and amenities. This ensures that our patients receive the best possible care in a comfortable and efficient environment.</p>
+                <h4 className="cs_service_detail_title">Advanced Digital Planning</h4>
+                <p>We utilize computer-assisted 3D deformity planning, Hexapod software simulation, and digital templating for every complex case. This ensures precision, minimizes complications, and delivers predictable outcomes for our patients.</p>
               </div>
               <div className="cs_service_detail_item">
-                <h4 className="cs_service_detail_title">Comprehensive Support</h4>
-                <p>From diagnosis to recovery, we provide comprehensive support at every stage. Our team is dedicated to helping patients achieve the best outcomes, offering guidance, follow-up care, and physical therapy recommendations to facilitate a smooth recovery.</p>
+                <h4 className="cs_service_detail_title">Comprehensive Care Pathway</h4>
+                <p>From diagnosis to recovery, we provide comprehensive support at every stage — including pre-operative counselling, surgical planning, inpatient care, physiotherapy, and long-term follow-up to ensure optimal functional recovery.</p>
               </div>
             </div>
           </div>
@@ -217,13 +220,13 @@ const AboutPage = () => {
             Ready to Restore Your Mobility?
           </h2>
           <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: 18, marginBottom: 32, maxWidth: 600, margin: '0 auto 32px' }}>
-            Consult Dr. Nikhil S. Charde for expert orthopaedic care. Specializing in complex trauma, Ilizarov surgery, joint replacement, deformity correction & spine surgery.
+            Preserving Limbs. Restoring Lives. Consult Dr. Nikhil S. Charde at ALRIC for advanced limb reconstruction, deformity correction & limb salvage.
           </p>
           <div className="d-flex flex-wrap justify-content-center gap-3">
             <a href="https://wa.me/917888096906" target="_blank" rel="noopener noreferrer" className="cs_btn cs_style_1" style={{ background: '#25D366', borderColor: '#25D366', color: '#fff' }}>
               <FaWhatsapp /> WhatsApp Now
             </a>
-            <a href="tel:+917888096906" className="cs_btn cs_style_1" style={{ background: '#fff', borderColor: '#fff', color: '#002261' }}>
+            <a href="tel:+917888096906" className="cs_btn cs_style_1" style={{ background: '#fff', borderColor: '#fff', color: '#0F2B46' }}>
               <FaPhoneAlt /> Call +91 78880 96906
             </a>
           </div>

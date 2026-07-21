@@ -5,12 +5,12 @@ import LocationMap from '../../Components/LocationMap/Index';
 
 const headingData = {
   backgroundImage: '/assets/img/page_heading_bg.jpg',
-  title: 'Contact Us',
+  title: 'Contact ALRIC',
 };
 
 const contactData = {
-  sectionSubtitle: 'CONTACT US',
-  SectionTitle: 'Get In Touch With<br />Dr. Nikhil S. Charde',
+  sectionSubtitle: 'CONTACT ALRIC',
+  SectionTitle: 'Book an Appointment at<br />ALRIC — Advanced Limb Reconstruction Centre',
   teethShapeImg: 'assets/img/icons/hero_shape_3.png',
   contactImg: 'assets/img/slider_2.jpg',
   iconBox: {

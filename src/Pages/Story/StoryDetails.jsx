@@ -13,6 +13,12 @@ const StoryDetails = () => {
     window.scrollTo(0, 0);
   }, [storyId]);
 
+  useEffect(() => {
+    if (data) {
+      document.title = `${data.title} | ALRIC Patient Stories — Dr. Nikhil S. Charde`;
+    }
+  }, [data]);
+
   if (!data) {
     return (
       <Section className="cs_page_heading cs_bg_filed cs_center" backgroundImage="/assets/img/page_heading_bg.jpg">

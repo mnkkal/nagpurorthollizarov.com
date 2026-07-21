@@ -34,8 +34,13 @@ const ContactSection = ({ data, reverseOrder }) => {
         <textarea rows={5} className="cs_form_field" placeholder="Your comments" name="message" value={formData.message} onChange={handleChange} required />
       </div>
       <div className="col-lg-12">
+        <p className="text-muted mt-2" style={{fontSize:13}}>
+          After submitting, you will be redirected to WhatsApp. You can send X-ray images, reports & photos directly on WhatsApp for Dr. Charde's review.
+        </p>
+      </div>
+      <div className="col-lg-12">
         <button type="submit" className="cs_btn cs_style_1 cs_color_1">
-          Send Request via WhatsApp
+          Send Enquiry via WhatsApp
         </button>
       </div>
     </form>

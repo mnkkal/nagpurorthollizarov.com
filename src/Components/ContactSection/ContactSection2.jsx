@@ -28,9 +28,10 @@ const ContactSection2 = () => {
           <div className="col-lg-6">
             <div className="cs_section_heading cs_style_1">
               <p className="cs_section_subtitle cs_accent_color">
-                <span className="cs_shape_left"></span>CONTACT US
+                <span className="cs_shape_left"></span>CONTACT ALRIC
               </p>
-              <h2 className="cs_section_title">Make An Appointment <br/>Apply For Treatments</h2>
+              <h2 className="cs_section_title">Book an Appointment <br/>Send Your X-rays for Review</h2>
+              <p className="mt-2 text-muted">Fill the form below and we will respond on WhatsApp. You can also send X-ray images directly via WhatsApp after submitting.</p>
             </div>
             <div className="cs_height_25 cs_height_lg_25"></div>
             <form className="cs_contact_form row cs_gap_y_30 home_form_area" onSubmit={handleSubmit}>

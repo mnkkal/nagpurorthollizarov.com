@@ -1,5 +1,5 @@
 import { useParams, Link } from 'react-router-dom';
-import { FaWhatsapp, FaPhoneAlt, FaArrowLeft, FaCheckCircle, FaCalendarAlt, FaUser, FaFolder } from 'react-icons/fa';
+import { FaWhatsapp, FaPhoneAlt, FaArrowLeft, FaCalendarAlt, FaUser, FaFolder } from 'react-icons/fa';
 import { getBlogData } from './blogsData';
 import PageHeading from '../../Components/PageHeading';
 import Section from '../../Components/Section';
@@ -12,6 +12,12 @@ const BlogsDetails = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [blogId]);
+
+  useEffect(() => {
+    if (data) {
+      document.title = `${data.title} | ALRIC Blog — Dr. Nikhil S. Charde`;
+    }
+  }, [data]);
 
   if (!data) {
     return (

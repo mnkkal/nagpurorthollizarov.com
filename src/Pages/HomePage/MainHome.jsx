@@ -2,6 +2,7 @@ import AlricHero from '../../Components/AlricHero';
 import CentresOfExcellence from '../../Components/AlricConditions';
 import WhyChoose from '../../Components/AlricWhyChoose';
 import AlricDoctor from '../../Components/AlricDoctor';
+import AlricAwards from '../../Components/AlricAwards';
 import AlricResearch from '../../Components/AlricResearch';
 import BeforeAfterGallery from '../../Components/AlricGallery';
 import PatientStories from '../../Components/AlricStories';
@@ -109,6 +110,10 @@ const MainHome = () => {
 
       <Section topSpaceLg="70" topSpaceMd="50" bottomSpaceLg="80" bottomSpaceMd="50">
         <AlricDoctor />
+      </Section>
+
+      <Section className="cs_gray_bg" topSpaceLg="70" topSpaceMd="50" bottomSpaceLg="80" bottomSpaceMd="50">
+        <AlricAwards />
       </Section>
 
       <Section className="cs_gray_bg" topSpaceLg="70" topSpaceMd="50" bottomSpaceLg="80" bottomSpaceMd="50">

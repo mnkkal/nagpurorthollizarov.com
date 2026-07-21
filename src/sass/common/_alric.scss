@@ -752,6 +752,52 @@ h1, h2, h3, h4, h5, h6,
 }
 
 /*---------------------------------------------
+  Awards & Memberships
+---------------------------------------------*/
+.alric-award-card {
+  background: var(--white);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 28px 16px;
+  text-align: center;
+  height: 100%;
+  transition: all 0.4s ease;
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(200,162,74,0.08);
+    border-color: var(--accent-color);
+    .alric-award-icon { color: var(--accent-color); }
+  }
+}
+
+.alric-award-icon {
+  width: 56px; height: 56px;
+  margin: 0 auto 14px;
+  background: var(--gray-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--heading-color);
+  transition: color 0.3s;
+}
+
+.alric-award-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--heading-color);
+  margin-bottom: 6px;
+  letter-spacing: 1px;
+}
+
+.alric-award-subtitle {
+  font-size: 11px;
+  color: var(--body-color);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/*---------------------------------------------
   FAQ
 ---------------------------------------------*/
 .alric-faq-item {
